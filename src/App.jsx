@@ -37,7 +37,7 @@ function App() {
     // Simulate module loading
     setTimeout(() => {
       setIsModuleLoading(false);
-    }, 1200);
+    }, 100);
   };
 
   return (
