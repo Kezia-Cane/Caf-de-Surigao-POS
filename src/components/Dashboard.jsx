@@ -49,24 +49,27 @@ export default function Dashboard() {
                 <div className="chart-card card">
                     <h3 className="chart-title">Sales by Category</h3>
                     <div className="chart-container">
-                        <ResponsiveContainer width="100%" height="100%">
-                            <PieChart>
-                                <Pie
-                                    data={mockCategoryStats}
-                                    cx="50%"
-                                    cy="50%"
-                                    innerRadius={80}
-                                    outerRadius={120}
-                                    paddingAngle={5}
-                                    dataKey="value"
-                                >
-                                    {mockCategoryStats.map((entry, index) => (
-                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                    ))}
-                                </Pie>
-                                <Tooltip formatter={(value) => [`${value}%`, 'Share']} />
-                            </PieChart>
-                        </ResponsiveContainer>
+                        <div style={{ flex: 1, minHeight: 0, width: '100%' }}>
+                            <ResponsiveContainer width="100%" height="100%">
+                                <PieChart>
+                                    <Pie
+                                        data={mockCategoryStats}
+                                        cx="50%"
+                                        cy="50%"
+                                        innerRadius={60}
+                                        outerRadius={80}
+                                        paddingAngle={5}
+                                        dataKey="value"
+                                        stroke="none"
+                                    >
+                                        {mockCategoryStats.map((entry, index) => (
+                                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                        ))}
+                                    </Pie>
+                                    <Tooltip formatter={(value) => [`${value}%`, 'Share']} />
+                                </PieChart>
+                            </ResponsiveContainer>
+                        </div>
                         {/* Custom Legend */}
                         <div className="pie-legend">
                             {mockCategoryStats.map((entry, index) => (
