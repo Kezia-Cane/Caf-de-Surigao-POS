@@ -1,0 +1,156 @@
+.staff-attendance-module {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.attendance-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    min-height: 500px;
+}
+
+.panel-title {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.staff-select {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: var(--radius-card);
+    border: 2px solid #eee;
+    margin-bottom: 24px;
+    font-family: var(--font-body);
+    outline: none;
+    background-color: var(--bg-warm-ivory);
+}
+
+.staff-select:focus {
+    border-color: var(--color-accent);
+}
+
+.action-buttons-large {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.large-action-btn {
+    padding: 30px;
+    font-size: 24px;
+    border-radius: var(--radius-card);
+    gap: 16px;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: var(--color-success);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #246227;
+}
+
+.btn-error {
+    background-color: var(--color-error);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-error:hover {
+    background-color: #9f2020;
+}
+
+.mock-camera {
+    background-color: #fafafa;
+    border-radius: var(--radius-card);
+    padding: 16px;
+    border: 1px dashed #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.camera-viewfinder {
+    height: 250px;
+    background-color: #eee;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    gap: 12px;
+}
+
+.mt-2 {
+    margin-top: 8px;
+}
+
+.mt-4 {
+    margin-top: 24px;
+}
+
+.mb-2 {
+    margin-bottom: 12px;
+}
+
+.staff-status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.stat-present {
+    background-color: rgba(46, 125, 50, 0.1);
+    color: var(--color-success);
+}
+
+.stat-late {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #b27e02;
+}
+
+.stats-row {
+    display: flex;
+    gap: 16px;
+}
+
+.s-box {
+    flex: 1;
+    background-color: var(--bg-warm-ivory);
+    padding: 20px;
+    border-radius: var(--radius-card);
+    text-align: center;
+}
+
+.s-val {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+}
+
+.s-lbl {
+    color: #666;
+    font-size: 14px;
+}
